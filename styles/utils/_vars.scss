@@ -1,0 +1,20 @@
+:root {
+  --html-fs: 1px;
+  --ff: "DM Sans", sans-serif;
+  --sf: "Poppins", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --txt-700-24-sf: normal 700 24px / 100% var(--sf);
+
+  --txt-500-24-sf: normal 500 24px / 100% var(--sf);
+  --txt-500-16-sf: normal 500 16px / 100% var(--sf);
+  
+  --txt-400-20-sf: normal 400 20px / 100% var(--sf);
+  --txt-400-18-sf: normal 400 18px / 100% var(--sf);
+
+  --c-text-white: #fff;
+  --c-color-border: rgba(255, 255, 255, 0.6);
+  --c-background-wrapper: #171718;
+  --c-background-backdrop: rgba(0, 0, 0, 0.6);
+  --c-background-before: #5c62ec;
+}

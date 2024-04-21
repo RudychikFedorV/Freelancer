@@ -1,0 +1,39 @@
+html {
+  font-size: var(--html-fs);
+}
+body {
+  font-size: 16px;
+  --font-family: var(--ff);
+  --second-family: var(--sf);
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 100%;
+  margin-inline: auto;
+}
+.container {
+  max-width: 1230px;
+  margin-inline: auto;
+  padding: 0 30px;
+  @include mobile-small {
+    padding: 0 10px;
+  }
+}
+.icon {
+  fill: #000;
+  transition: var(--transition);
+}
+
+.icon:hover {
+  fill: var(--c-primary);
+}
+img {
+  cursor: pointer;
+}
+
+.svg {
+  transition: var(--transition);
+  &:hover {
+    scale: 1.1;
+  }
+}
