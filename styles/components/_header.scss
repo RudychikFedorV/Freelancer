@@ -1,6 +1,6 @@
 .header {
   background: var(--c-background-wrapper);
-  border-bottom: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-black-border);
 
   .container {
     @include f-s-c;
@@ -12,6 +12,10 @@
     color: var(--c-text-white);
     span {
       font: var(--txt-400-20-sf);
+    }
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.8;
     }
     @include tablet-small {
       font: var(--txt-500-24-sf);
@@ -79,6 +83,7 @@
   &__a {
     font: var(--txt-500-16-sf);
     color: var(--c-text-white);
+    transition: var(--transition);
     &:hover {
       opacity: 0.8;
     }

@@ -4,16 +4,23 @@
   --sf: "Poppins", sans-serif;
   --transition: 0.2s all ease-in-out;
 
+  // Poppins
   --txt-700-24-sf: normal 700 24px / 100% var(--sf);
-
   --txt-500-24-sf: normal 500 24px / 100% var(--sf);
   --txt-500-16-sf: normal 500 16px / 100% var(--sf);
-  
   --txt-400-20-sf: normal 400 20px / 100% var(--sf);
   --txt-400-18-sf: normal 400 18px / 100% var(--sf);
 
+// DM Sans
+  --txt-700-60-ff: normal 700 60px / 100% var(--ff);
+  --txt-700-40-ff: normal 700 40px / 130% var(--ff);
+  --txt-700-30-ff: normal 700 30px / 100% var(--ff);
+  --txt-500-18-ff: normal 500 18px / 133% var(--ff);
+  --txt-500-16-ff: normal 500 16px / 150% var(--ff);
+
   --c-text-white: #fff;
-  --c-color-border: rgba(255, 255, 255, 0.6);
+  --c-color-title: #fafafa;
+  --c-black-border: #26292d;
   --c-background-wrapper: #171718;
   --c-background-backdrop: rgba(0, 0, 0, 0.6);
   --c-background-before: #5c62ec;
