@@ -1,3 +1,23 @@
 .footer {
-	padding: 20px;
+  background: var(--c-background-wrapper);
+  padding: 60px 0 50px;
+  &-blocks {
+    @include f-c-c;
+    gap: 30px;
+    margin-bottom: 27px;
+    @include mobile-small {
+      gap: 20px;
+    }
+    img {
+      transition: var(--transition);
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+  &-copyright {
+    font: var(--txt-400-16-ff);
+    text-align: center;
+    color: var(--c-text-white);
+  }
 }

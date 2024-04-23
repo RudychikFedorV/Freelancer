@@ -1,2 +1,2 @@
 Freelancer portfolio
-[html, scss, js, mixins, dark-mode](https://rudychikfedorv.github.io/Freelancer/)
+[html, scss, js, mixins, variables, dark-mode](https://rudychikfedorv.github.io/Freelancer/)
