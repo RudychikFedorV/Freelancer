@@ -1,0 +1,12 @@
+.contacts {
+  padding: 70px 0;
+  text-align: center;
+  &__h2 {
+    margin-bottom: 20px;
+  }
+  &__desc {
+    max-width: 571px;
+    margin-bottom: 40px;
+    margin-inline: auto;
+  }
+}

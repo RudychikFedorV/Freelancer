@@ -19,30 +19,26 @@ body {
     padding: 0 10px;
   }
 }
-.icon {
-  fill: #000;
-  transition: var(--transition);
-}
-
-.icon:hover {
-  fill: var(--c-primary);
-}
 img {
   cursor: pointer;
 }
-
-.svg {
-  transition: var(--transition);
-  &:hover {
-    scale: 1.1;
-  }
-}
 .title {
   font: var(--txt-700-60-ff-130);
-    text-align: center;
-    color: var(--c-background-before);
-    margin-bottom: 40px;
-    @include mobile {
-      font: var(--txt-700-40-ff);
-    }
+  text-align: center;
+  color: var(--c-background-before);
+  margin-bottom: 40px;
+  @include mobile {
+    font: var(--txt-700-40-ff);
+  }
+}
+.h2 {
+  font: var(--txt-700-40-ff);
+  color: var(--c-background-wrapper);
+  @include mobile {
+    font: var(--txt-700-30-ff);
+  }
+}
+.desc {
+  font: var(--txt-400-18-ff);
+  color: var(--c-background-wrapper);
 }

@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../docs/styles.css">
-    <title>Freelancer portfolio</title>
+    <title>Skills</title>
 </head>
 
 <body>
@@ -24,21 +24,43 @@
                     <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
                     <ul class="header__ul" id="headerUl">
                         <li class="header__li"><a class="header__a" href="../index.html">Projects</a></li>
-                        <li class="header__li"><a class="header__a active" href="../pages/skills.html">Skills</a></li>
-                        <li class="header__li"><a class="header__a" href="../pages/contacts.html">Contacts</a></li>
+                        <li class="header__li"><a class="header__a  active" href="./skills.html">Skills</a></li>
+                        <li class="header__li"><a class="header__a" href="./contacts.html">Contacts</a></li>
                         <span class="material-icons icon-close" onclick="navToggle()">close</span>
                     </ul>
                     <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
                 </div>
+                <button class="dark-mode">
+                    <img src="../img/icons/sun.svg" alt="Light mode" class="dark-mode__icon">
+                    <img src="../img/icons/moon.svg" alt="Dark mode" class="dark-mode__icon">
+                </button>
             </div>
         </header>
+        <section class="skills">
+            <div class="container">
+                <h1 class="skills__title title">Skills</h1>
+                <h2 class="skills__h2 h2">Frontend</h2>
+                <p class="skills__desc desc">JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM,
+                    BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+                </p>
+                <h2 class="skills__h2 h2">Backend</h2>
+                <p class="skills__txt desc">NodeJS, MySQL, MongoDB, PHP, Laravel</p>
 
-
-
-
-        <footer class="footer"> </footer>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-blocks">
+                    <a href="#!"><img src="../img/icons/vk.svg" alt="vk"></a>
+                    <a href="#!"><img src="../img/icons/instagram.svg" alt="instagram"></a>
+                    <a href="#!"><img src="../img/icons/twitter.svg" alt="twitter"></a>
+                    <a href="#!"><img src="../img/icons/gitHub.svg" alt="gitHub"></a>
+                    <a href="#!"><img src="../img/icons/linkedIn.svg" alt="linkedIn"></a>
+                </div>
+                <div class="footer-copyright">© <span id="copyright"></span> frontend-dev.com</div>
+            </div>
+        </footer>
     </div>
-
 
     <script src="../js/index.js"></script>
 </body>
