@@ -3,11 +3,13 @@
   border-bottom: 1px solid var(--c-black-border);
 
   .container {
-    @include f-s-c;
+    @include f-e-c;
     padding-top: 20px;
     padding-bottom: 20px;
+    column-gap: 20px;    
   }
   &__logo {
+    margin-right: auto;
     font: var(--txt-700-24-sf);
     color: var(--c-text-white);
     span {
@@ -20,7 +22,7 @@
     @include tablet-small {
       font: var(--txt-500-24-sf);
       span {
-        font: var(--txt-400-18-sf);
+        display: none;
       }
     }
   }

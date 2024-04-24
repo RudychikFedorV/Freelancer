@@ -1,16 +1,10 @@
 .projects {
-	padding: 70px 0;
+  padding: 70px 0;
   @include mobile {
-	padding: 40px 0;
+    padding: 40px 0;
   }
   &-title {
-    font: var(--txt-700-60-ff-130);
-    text-align: center;
-    color: var(--c-background-before);
     margin-bottom: 60px;
-    @include mobile {
-      font: var(--txt-700-40-ff);
-    }
   }
   &-blocks {
     @include f-c-c;

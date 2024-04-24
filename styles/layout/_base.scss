@@ -37,3 +37,12 @@ img {
     scale: 1.1;
   }
 }
+.title {
+  font: var(--txt-700-60-ff-130);
+    text-align: center;
+    color: var(--c-background-before);
+    margin-bottom: 40px;
+    @include mobile {
+      font: var(--txt-700-40-ff);
+    }
+}

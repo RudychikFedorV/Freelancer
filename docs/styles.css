@@ -165,6 +165,7 @@ p {
   --txt-500-16-ff: normal 500 16px / 150% var(--ff);
   --txt-400-16-ff: normal 400 16px / 150% var(--ff);
   --c-text-white: #fff;
+  --c-text-black: #000;
   --c-color-title: #fafafa;
   --c-black-border: #26292d;
   --c-background-wrapper: #171718;
@@ -220,6 +221,18 @@ img {
   scale: 1.1;
 }
 
+.title {
+  font: var(--txt-700-60-ff-130);
+  text-align: center;
+  color: var(--c-background-before);
+  margin-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .title {
+    font: var(--txt-700-40-ff);
+  }
+}
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -237,12 +250,14 @@ img {
 }
 .header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  column-gap: 20px;
 }
 .header__logo {
+  margin-right: auto;
   font: var(--txt-700-24-sf);
   color: var(--c-text-white);
   transition: var(--transition);
@@ -258,7 +273,7 @@ img {
     font: var(--txt-500-24-sf);
   }
   .header__logo span {
-    font: var(--txt-400-18-sf);
+    display: none;
   }
 }
 .header__backdrop {
@@ -356,6 +371,33 @@ img {
   }
 }
 
+.dark-mode {
+  order: 9;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 51px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #272727;
+}
+@media (max-width: 576px) {
+  .dark-mode {
+    margin-top: -5px;
+  }
+}
+
+.dark {
+  /* Dark mode */
+  --page-bg: #252526;
+  --text-color: var(--white);
+  --title-1: var(--white);
+  --project-card-bg: var(--black);
+  --project-card-text: var(--white);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+}
+
 .welcome {
   background: var(--c-background-wrapper);
   min-height: 695px;
@@ -428,15 +470,7 @@ img {
   }
 }
 .projects-title {
-  font: var(--txt-700-60-ff-130);
-  text-align: center;
-  color: var(--c-background-before);
   margin-bottom: 60px;
-}
-@media (max-width: 576px) {
-  .projects-title {
-    font: var(--txt-700-40-ff);
-  }
 }
 .projects-blocks {
   display: flex;
@@ -496,6 +530,34 @@ img {
   font: var(--txt-400-16-ff);
   text-align: center;
   color: var(--c-text-white);
+}
+
+.video-service {
+  padding: 70px 0;
+  text-align: center;
+}
+.video-service__img {
+  margin-bottom: 40px;
+}
+.video-service__txt {
+  font: var(--txt-700-24-ff);
+  color: var(--c-background-wrapper);
+  margin-bottom: 30px;
+}
+.video-service__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  gap: 10px;
+  border: 1px solid var(--c-text-black);
+  border-radius: 5px;
+  max-width: 169px;
+  padding: 12px 18px;
+}
+.video-service__block p {
+  font: var(--txt-500-16-ff);
+  color: var(--c-text-black);
 }
 
 /*# sourceMappingURL=styles.css.map */

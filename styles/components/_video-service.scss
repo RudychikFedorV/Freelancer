@@ -1,0 +1,25 @@
+.video-service {
+  padding: 70px 0;
+  text-align: center;
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__txt {
+    font: var(--txt-700-24-ff);
+    color: var(--c-background-wrapper);
+    margin-bottom: 30px;
+  }
+  &__block {
+    @include f-c-c;
+    margin-inline: auto;
+    gap: 10px;
+    border: 1px solid var(--c-text-black);
+    border-radius: 5px;
+    max-width: 169px;
+    padding: 12px 18px;
+    p {
+      font: var(--txt-500-16-ff);
+      color: var(--c-text-black);
+    }
+  }
+}
